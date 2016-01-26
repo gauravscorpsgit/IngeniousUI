@@ -1,28 +1,26 @@
-<!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
-<!--[if !IE]><!-->
-<html lang="en">
-<!--<![endif]-->
-<head>
-    <meta charset="utf-8" />
-    <title>Ingenius Prep</title>
-    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
-    <meta content="" name="description" />
-    <meta content="" name="author" />
+<link href="assets/css/student_profile.css" rel="stylesheet" />
 
-    <!-- ================== BEGIN BASE CSS STYLE ================== -->
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
-    <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="../assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
-    <link href="../assets/css/animate.min.css" rel="stylesheet" />
-    <link href="../assets/css/style-responsive.min.css" rel="stylesheet" />
-    <link href="../assets/css/theme/default.css" rel="stylesheet" id="theme" />
-    <link href="../assets/css/style.min.css" rel="stylesheet" />
-    <link href="../assets/css/student_profile.css" rel="stylesheet" />
+<style>
 
-    <!-- ================== END BASE CSS STYLE ================== -->
-</head>
-<body>
+    .container {
+        max-width: 100rem;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 2rem;
+    }
+
+    .mt1 {
+        margin-top: 1rem;
+    }
+
+    .align-right {
+        text-align: right;
+    }
+
+    .mouse-pointer {
+        cursor: pointer;
+    }
+</style>
 <div id="page-container" class="fade page-sidebar-fixed page-header-fixed">
     <div class="container" align="right" style="margin-top: 25px;">
         <a href="studentPortal.html" class="btn btn-outline" style=" margin-right: 14px;">Student-Counselor Portal</a>
@@ -35,7 +33,7 @@
             <ul class="nav">
                 <li class="nav-profile">
                     <div class="image">
-                        <a href="../index.html"><img src="../assets/img/user-6.jpg" alt="" /></a>
+                        <a href="../index.html"><img src="assets/img/user-6.jpg" alt="" /></a>
                     </div>
                     <div class="info">
                         <strong>Ingenius Prep</strong>
@@ -96,61 +94,43 @@
         </ol>
         <h3 class="page-header">Deliverable Checklist</h3>
         <h3 align="center">Frequently Asked Questions</h3>
-        <div class="panel-group" id="accordion">
-            <div class="panel panel-inverse overflow-hidden">
-                <div class="panel-heading">
-                    <h3 class="panel-title">
-                        <a class="accordion-toggle accordion-toggle-styled collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false">
-                            <i class="fa fa-plus-circle pull-right"></i>
-                            What payment method do you prefer?
-                        </a>
-                    </h3>
-                </div>
-                <div id="collapseOne" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                    <div class="panel-body">
-                        <div class="form-group">
-                            <div class="col-md-9">
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" value="">
-                                        Deliverable 1
-                                    </label>
-                                </div>
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" value="">
-                                        Deliverable 2
-                                    </label>
-                                </div>
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" value="">
-                                        Deliverable 3
-                                    </label>
+
+        <section>
+            <div class="container">
+
+                <div class="collapse-card panel panel-inverse overflow-hidden">
+                        <div class="collapse-card__heading panel-heading">
+                            <h2 class="collapse-card__title panel-title">
+                                <i class="fa fa-question-circle fa-2x fa-fw"></i>
+                                What payment method do you prefer?
+                            </h2>
+                        </div>
+                        <div class="collapse-card__body panel-body">
+                            <div class="form-group">
+                                <div class="col-md-9">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" value="">
+                                            Deliverable 1
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" value="">
+                                            Deliverable 2
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" value="">
+                                            Deliverable 3
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
                 </div>
             </div>
-        </div>
+        </section>
     </div>
 </div>
-<!-- end page container -->
-
-<!-- ================== BEGIN BASE JS ================== -->
-<script src="../assets/plugins/jquery/jquery-1.9.1.min.js"></script>
-<script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-<!-- ================== END BASE JS ================== -->
-
-<!-- ================== BEGIN PAGE LEVEL JS ================== -->
-<script src="../assets/js/sidebarjs.js"></script>
-<!-- ================== END PAGE LEVEL JS ================== -->
-
-<script>
-    $(document).ready(function() {
-        App.init();
-    });
-</script>
-</body>
-</html>
