@@ -1,0 +1,61 @@
+<link href="assets/css/student_profile.css" rel="stylesheet" />
+<div id="page-container" class="fade page-sidebar-fixed page-header-fixed">
+    <div ng-include="'main/sidebar.html'"></div>
+
+    <!-- begin #content -->
+    <div id="content" class="content">
+        <!-- begin breadcrumb -->
+        <ol class="breadcrumb pull-right">
+            <li><a href="javascript:;">Home</a></li>
+            <li class="active">Meeting Reports</li>
+        </ol>
+        <h3 class="page-header">Meeting Reports</h3>
+        <div class="clearfix"></div>
+        <section>
+            <div class="container">
+                <div class="panel panel-inverse">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">Your Meeting Reports</h4>
+                    </div>
+                    <div class="panel-body">
+                        <div id="grid1" ui-grid="meeting_reports" class="grid" style="height: 250px;"></div>
+                    </div>
+                </div>
+                <div class="panel panel-inverse">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">Meeting Summary</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>Quisque sed varius nisl. Nulla facilisi. Phasellus consequat sapien sit amet nibh molestie placerat. Donec nulla quam, ullamcorper ut velit vitae, lobortis condimentum magna. Suspendisse mollis in sem vel mollis.</p>
+                    </div>
+                </div>
+                <div class="panel panel-inverse">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">What we will discuss next meeting</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>Quisque sed varius nisl. Nulla facilisi. Phasellus consequat sapien sit amet nibh molestie placerat. Donec nulla quam, ullamcorper ut velit vitae, lobortis condimentum magna. Suspendisse mollis in sem vel mollis.</p>
+                    </div>
+                </div>
+                <div class="panel panel-inverse">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">Assignment For Students (including deadlines)</h4>
+                    </div>
+                    <div class="panel-body">
+                       <p>Quisque sed varius nisl. Nulla facilisi. Phasellus consequat sapien sit amet nibh molestie placerat. Donec nulla quam, ullamcorper ut velit vitae, lobortis condimentum magna. Suspendisse mollis in sem vel mollis.</p>
+                    </div>
+                </div>
+
+                <div class="panel panel-inverse">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">Home Work For Counselors (including deadlines)</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>Quisque sed varius nisl. Nulla facilisi. Phasellus consequat sapien sit amet nibh molestie placerat. Donec nulla quam, ullamcorper ut velit vitae, lobortis condimentum magna. Suspendisse mollis in sem vel mollis.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+</div>

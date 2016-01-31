@@ -5,7 +5,8 @@ angular.module('ingeniusApp', [
   'ngRoute',
   'ingeniusApp.main',
   'ingeniusApp.view2',
-  'ingeniusApp.version'
+  'ingeniusApp.version',
+  'ui.grid','ui.grid.autoResize'
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.otherwise({redirectTo: '/landing'});

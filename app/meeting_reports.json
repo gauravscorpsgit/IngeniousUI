@@ -1,0 +1,32 @@
+[
+  {
+    "student_name": "Gaurav Chawla",
+    "counselor_name": "Mr. Mark",
+    "date": "30-Jan-2016"
+  },
+  {
+    "student_name": "Raymond",
+    "counselor_name": "Mr. T. Stuart",
+    "date": "01-Jan-2016"
+  },
+  {
+    "student_name": "Matt",
+    "counselor_name": "Mr. Bill Clive",
+    "date": "18-Feb-2016"
+  },
+  {
+    "student_name": "Philip",
+    "counselor_name": "Ms. Celine",
+    "date": "30-March-2016"
+  },
+  {
+    "student_name": "John",
+    "counselor_name": "Mr. Chis Chole",
+    "date": "01-Sep-2015"
+  },
+  {
+    "student_name": "Gary",
+    "counselor_name": "Mrs. Kirsten",
+    "date": "30-Jan-2016"
+  }
+]

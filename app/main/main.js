@@ -14,14 +14,59 @@ angular.module('ingeniusApp.main', ['ngRoute'])
             .when('/student/profile', {
                 templateUrl: 'main/student_profile.html',
                 controller: 'StudentProfileCtrl'
-            });
-    }])
-
-    .controller('MainCtrl', [function() {
+            })
+            .when('/curriculum_doc',{
+                templateUrl: 'main/curriculum_docs.html',
+                controller: 'MainCtrl'
+            })
+            .when('/work_product',{
+                templateUrl: 'main/work_product.html',
+                controller: 'MainCtrl'
+            })
+            .when('/meeting_reports',{
+                templateUrl: 'main/meeting_reports.html',
+                controller: 'MainCtrl'
+            })
+    }]).controller('MainCtrl', ['$scope', '$http', function($scope, $http) {
 
         $(document).ready(function() {
             $('#home').height($(window).height());
         });
+        $(document).ready(function() {
+            App.init();
+        });
+
+        $scope.work_products = {
+            enableSorting: true,
+            columnDefs: [
+                { field: 'Name'},
+                { field: 'Date'},
+                { field: 'Kind'}
+            ],
+            onRegisterApi: function( gridApi ) {
+                $scope.grid1Api = gridApi;
+            }
+        };
+        $http.get('1.json')
+            .success(function(data) {
+                $scope.work_products.data = data;
+            });
+
+        $scope.meeting_reports = {
+            enableSorting: true,
+            columnDefs: [
+                { field: 'student_name', enableSorting: false},
+                { field: 'counselor_name', enableSorting: false},
+                { field: 'date', enableSorting: true}
+            ],
+            onRegisterApi: function( gridApi ) {
+                $scope.grid1Api = gridApi;
+            }
+        };
+        $http.get('meeting_reports.json')
+            .success(function(data) {
+                $scope.meeting_reports.data = data;
+            });
 
     }])
     .controller('StudentProfileCtrl', [function() {
